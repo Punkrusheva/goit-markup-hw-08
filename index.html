@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="web-studio" content="Web Studio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Web Studio</title>
     <!--<link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />-->
@@ -21,18 +22,38 @@
           <span class="logo-blue">Web</span>
           <span class="logo-black">Studio</span>
         </a>
-        <nav>
-          <ul class="site-nav">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="address-header">
-            <li aria-label="E-mail">
-              <a class="e-mail" href="mailto:info@devstudio.com">
-                <svg
+      
+        <!-- NAV -->
+
+        <a class="menu" data-menu-open>
+          <svg class="icon icon-menu" viewBox="0 0 48 32"
+                  width="24px"
+                  height="18px">
+            <use xlink:href="./images/svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </a>
+        <div class="backdrop-nav is-hidden" data-menu>
+          <div class="header-menu">
+            </a>
+            <a class="close" data-menu-close>
+              <svg class="icon icon-close-menu">
+                <use xlink:href="./images/svg/symbol-defs.svg#icon-close-menu" viewBox="0 0 38 38"
+                  width="38px"
+                  height="38px"></use>
+              </svg>
+            </a>
+            <nav>
+              <ul class="site-nav-mob">
+                <li><a href="./index.html" class="link current">Студия</a></li>
+                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li><a href="" class="link">Контакты</a></li>
+              </ul>
+            </nav>
+            <address class="address-mob">
+              <ul class="address-header">
+                <li aria-label="E-mail">
+                  <a class="e-mail" href="mailto:info@devstudio.com">
+                    <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 43 32"
                   width="16px"
@@ -60,6 +81,36 @@
             </li>
           </ul>
         </address>
+        </div>
+        </div>
+        
+        <nav>
+          <ul class="site-nav">
+            <li><a href="./index.html" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="address-header">
+            <li aria-label="E-mail">
+              <a class="e-mail" href="mailto:info@devstudio.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 32" width="16px" height="12px"
+                  class="icon-address-header">
+                  <use href="./images/svg/symbol-defs.svg#icon-e-mail"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li aria-label="Phone">
+              <a class="phone" href="tel:+380961111111">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 32" width="10px" height="15px"
+                  class="icon-address-header">
+                  <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
@@ -67,7 +118,7 @@
 <main>
       <section class="hero">
         <div class="container">
-          <h1>Эффективные решения для вашего бизнеса</h1>
+          <h1 class="title">Эффективные решения для вашего бизнеса</h1>
           <button class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
@@ -190,7 +241,7 @@
               <img src="./images/photo-1.jpg" width="270" alt="John Smith" />
               <h3>Николай Кучеренко</h3>
               <p>Product Designer</p>
-              <ul>
+              <ul class="comand-soc">
                 <li class="soc-cont">
                   <a class="link" href="">
                     <svg
@@ -261,7 +312,7 @@
               <img src="./images/photo-2.jpg" width="270" alt="Marta Stewart" />
               <h3>Ольга Иванова</h3>
               <p>Frontend Developer</p>
-              <ul>
+              <ul class="comand-soc">
                 <li class="soc-cont">
                   <a class="link" href="">
                     <svg
@@ -332,7 +383,7 @@
               <img src="./images/photo-3.jpg" width="270" alt="Robert Jakis" />
               <h3>Андрей Шевченко</h3>
               <p>Marketing</p>
-              <ul>
+              <ul class="comand-soc">
                 <li class="soc-cont">
                   <a class="link" href="">
                     <svg
@@ -403,7 +454,7 @@
               <img src="./images/photo-4.jpg" width="270" alt="Martin Doe" />
               <h3>Иван Николаев</h3>
               <p>UI Designer</p>
-              <ul>
+              <ul class="comand-soc">
                 <li class="soc-cont">
                   <a class="link" href="">
                     <svg
@@ -704,7 +755,8 @@
           </a>
       </div>
     </div>
-    
+
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
   </body>
 </html>
