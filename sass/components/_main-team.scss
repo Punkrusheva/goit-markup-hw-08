@@ -1,10 +1,10 @@
 .team {
+  width: 100%;
   background-color: $seckond-bg-color;
-  .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    width: 100%;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
   h3 {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -68,6 +68,7 @@
 
   &-list {
     width: 100%;
+    margin: 0;
     margin-bottom: 30px;
     background: $light-color;
     padding-bottom: 24px;
@@ -105,105 +106,46 @@
     fill: currentColor;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
+  .team .container {
+    width: 480px;
+  }
+  .team-list {
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team .container {
+    width: 768px;
+  }
+  .team ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-list {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .team-list:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team .container {
+    width: 1200px;
+  }
   .team {
-    background-color: $seckond-bg-color;
     padding-top: 94px;
     padding-bottom: 94px;
-
-    h3 {
-      margin-top: 0px;
-      margin-bottom: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 30px;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 19px;
-
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: $title-color;
-    }
-    p {
-      margin-top: 0px;
-      margin-bottom: 16px;
-      margin-left: auto;
-      margin-right: auto;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 19px;
-
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: $text-color;
-    }
-    .link {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding: 1px 1px;
-      border-radius: 10px;
-      font-family: $font-family;
-      color: #afb1b8;
-
-      transition: background-color $animation-effect, color $animation-effect,
-        box-shadow$animation-effect;
-
-      &:hover,
-      &:focus {
-        background-color: $accent-color;
-        color: $light-color;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
-    }
-    ul {
-      display: flex;
-      justify-content: center;
-      padding: 0px;
-      margin: 0px;
-    }
-
     &-list {
+      margin-right: 0;
       width: calc((100% - 30px * 3) / 4);
       margin-right: 30px;
-      background: $light-color;
-      padding-bottom: 24px;
-      box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-      border-radius: 0px 0px 4px 4px;
-    }
-    &-list:last-child {
-      margin-right: 0px;
-    }
-    &-list .link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-    }
-    &-list .soc-cont {
-      margin-right: 10px;
-      background-color: $light-color;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      border-radius: 50%;
-    }
-    &-list .soc-cont:last-child {
-      margin-right: 0px;
-    }
-    &-soc {
-      width: 1em;
-      height: 1em;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
+
+      &:last-child {
+        margin-right: 0px;
+      }
     }
   }
 }

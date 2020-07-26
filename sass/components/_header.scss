@@ -1,5 +1,4 @@
 .page-header .container {
-  width: 100%;
   position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -70,6 +69,11 @@
 
     transform: translatY(-100%);
     transition: transform $animation-effect;
+  }
+}
+@media screen and (min-width: 480px) {
+  .page-header .container {
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
