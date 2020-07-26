@@ -18,26 +18,21 @@
 
     <header class="page-header">
       <div class="container">
-        <a lang="en" href="./index.html" class="logo">
-          <span class="logo-blue">Web</span>
-          <span class="logo-black">Studio</span>
-        </a>
     
         <!-- NAV -->
-    
-        <a class="menu" data-menu-open>
-          <svg class="icon icon-menu" viewBox="0 0 48 32" width="24px" height="18px">
-            <use xlink:href="./images/svg/symbol-defs.svg#icon-menu"></use>
-          </svg>
-        </a>
-        <div class="backdrop-nav is-hidden" data-menu>
-          <div class="header-menu">
-            </a>
-            <a class="close" data-menu-close>
-              <svg class="icon icon-close-menu">
-                <use xlink:href="./images/svg/symbol-defs.svg#icon-close-menu"></use>
-              </svg>
-            </a>
+        <div class="header-menu">
+          <a lang="en" href="./index.html" class="logo">
+            <span class="logo-blue">Web</span>
+            <span class="logo-black">Studio</span>
+          </a>
+          <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="icon icon-menu" xlink:href="./images/svg/symbol-defs.svg#icon-menu"></use>
+              <use class="icon icon-close-menu" xlink:href="./images/svg/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container " data-menu>
+            <!--is-open-->
             <nav>
               <ul class="site-nav-mob">
                 <li><a href="./index.html" class="link">Студия</a></li>
@@ -66,7 +61,36 @@
               </ul>
             </address>
           </div>
+          <!--</div>-->
         </div>
+        <!--
+            <nav>
+              <ul class="site-nav">
+                <li><a href="./index.html" class="link current">Студия</a></li>
+                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li><a href="" class="link">Контакты</a></li>
+              </ul>
+            </nav>
+            <address class="address">
+              <ul class="address-header">
+                <li aria-label="E-mail">
+                  <a class="e-mail" href="mailto:info@devstudio.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 32" width="16px" height="12px"
+                      class="icon-address-header">
+                      <use href="./images/svg/symbol-defs.svg#icon-e-mail"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li aria-label="Phone">
+                  <a class="phone" href="tel:+380961111111">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 32" width="10px" height="15px"
+                      class="icon-address-header">
+                      <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>-->
       </div>
     </header>
 
