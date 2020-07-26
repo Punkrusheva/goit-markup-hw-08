@@ -15,13 +15,15 @@
     }
   }
 }
+
 .modal {
   position: absolute;
   left: 50%;
   top: 50%;
   align-items: center;
-  width: 450px;
-  max-height: 609px;
+  width: 100%;
+  max-width: 450px;
+  max-height: calc(100%-30px);
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   background-color: $primary-bg-color;
@@ -70,9 +72,8 @@
 
     &-close-form {
       position: absolute;
-      right: 0;
-      top: 10px;
-      transform: translateX(395px);
+      left: 90%;
+      top: 5%;
       width: 30px;
       height: 30px;
       padding: 6px;
@@ -91,7 +92,7 @@
 }
 
 .form {
-  max-width: 370px;
+  width: 100%;
   height: 330px;
   margin-bottom: 20px;
   &-field {
@@ -216,10 +217,13 @@
 
     color: #757575;
   }
+
+  .checkbox-text {
+    text-align: left;
+  }
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: $accent-color;
-    border-bottom: 1px solid $accent-color;
   }
   &-sign {
     position: absolute;
@@ -239,7 +243,7 @@
     display: inline-block;
     content: "";
     margin-right: 7px;
-    width: 16px;
+    min-width: 16px;
     height: 16px;
     border: 2px solid #000;
     border-radius: 2px;
