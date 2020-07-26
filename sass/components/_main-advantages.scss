@@ -2,11 +2,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
-
   ul {
     padding: 0px;
   }
-
   svg {
     background-color: #f5f4fa;
     background-image: url(../images/svg/symbol-defs.svg#icon-1);
@@ -53,62 +51,59 @@
     color: $text-color;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+      width: 480px;
+    }
     ul {
       display: flex;
+      flex-wrap: wrap;
       margin: 0px;
       padding-left: 0px;
     }
+    .list-item {
+      width: calc(100% - 30px);
+    }
+  }
+}
 
-    svg {
-      background-color: #f5f4fa;
-      background-image: url(../images/svg/symbol-defs.svg#icon-1);
-      content: "";
-      width: 100%;
-      height: 120px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      border-radius: 4px;
+@media screen and (min-width: 768px) {
+  .advantages {
+    .container {
+      width: 768px;
+      margin-bottom: -30px;
     }
     .list-item {
-      margin-right: 30px;
-      width: calc((100% - 30px * 3) / 4);
+      margin: 0;
+      width: calc((100% - 30px) / 2);
+      margin-bottom: 30px;
     }
-    .list-item:last-child {
-      margin-right: 0px;
-    }
-    .hidden {
-      visibility: hidden;
-      font-size: 0;
-    }
-    .title {
-      margin-top: 0px;
-      margin-bottom: 10px;
-      margin-top: 30px;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: bold;
-      font-size: $text-font-size;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $title-color;
-    }
-    .text {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .list-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
 
-      letter-spacing: 0.03em;
-      color: $text-color;
+@media screen and (min-width: 1200px) {
+  .advantages .container {
+    width: 1200px;
+  }
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    .list-item {
+      margin-right: 0;
+      width: calc((100% - 30px * 3) / 4);
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
     }
   }
 }
