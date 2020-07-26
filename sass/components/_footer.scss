@@ -237,7 +237,7 @@
     fill: currentColor;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .footer {
     background-color: $footer-bg-color;
 
@@ -453,4 +453,8 @@
       fill: currentColor;
     }
   }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
 }
