@@ -1228,10 +1228,6 @@ a {
 }
 
 @media screen and (min-width: 480px) {
-  .advantages {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .advantages .container {
     width: 480px;
   }
@@ -2208,133 +2204,67 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
-  /*.footer {
-    .container {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      text-align: left;
-      outline: 2px solid red;
-    }
-    .card {
-      width: calc(25% - 15px);
-      outline: 2px solid red;
-      text-align: left;
-      .address-footer {
-        margin-bottom: 0px;
-      }
-    }
-    .social {
-      width: calc(25% - 15px);
-      margin-left: 30px;
-      outline: 2px solid red;
-    }
-    .subscribe {
-      flex-direction: column;
-      align-items: baseline;
-      width: 50%;
-      margin-top: 0px;
-      outline: 2px solid red;
-      [type="email"] {
-        width: 450px;
-      }
-    }
-  }
-}*/
   .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding-top: 45px;
-    padding-bottom: 60px;
+  }
+  .footer .logo-footer {
+    text-align: left;
   }
   .footer .card {
-    width: 25%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 231px;
+    margin-right: 69px;
   }
-  .logo-footer {
-    margin-bottom: 20px;
-    font-size: 26px;
-    line-height: 31px;
+  .footer .card .address-footer li {
+    text-align: left;
   }
-  .address-footer {
-    margin: 0px;
-    /*margin-right: 69px;*/
+  .footer .social {
+    width: 206px;
+    margin: 0;
+    margin-right: 94px;
   }
-  .address-footer ul,
-  .address-footer li {
-    padding-left: 0px;
-    margin: 0px;
-  }
-  .address-footer li {
-    margin-bottom: 9px;
-  }
-  .address-footer li:last-child {
-    margin-bottom: 0px;
-  }
-  .social {
-    /*margin-right: 94px;*/
-    width: 25%;
-  }
-  .social b {
+  .footer .social b {
     display: inline-block;
-    margin-bottom: 20px;
+    text-align: left;
   }
-  .social .social-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0px;
-    padding: 0px;
+  .footer .social .social-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
-  .social li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 10px;
-    width: 44px;
-    height: 44px;
-  }
-  .social li:last-child {
-    margin-right: 0px;
-  }
-  .subscribe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .footer .subscribe {
+    display: block;
+    width: 570px;
+    margin: 0;
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 50%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
-  .subscribe label {
-    margin-bottom: 20px;
+  .footer .subscribe .subscribe-label {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
-  .subscribe [type="email"] {
-    padding-left: 16px;
+  .footer .subscribe [type="email"] {
+    display: inline-block;
+    max-width: 358px;
+    text-align: start;
     margin-right: 12px;
-    width: 358px;
-    height: 50px;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

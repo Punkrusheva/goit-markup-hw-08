@@ -262,119 +262,56 @@
     }
   }
 }
+
 @media screen and (min-width: 1200px) {
-  /*.footer {
-    .container {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      text-align: left;
-      outline: 2px solid red;
-    }
-    .card {
-      width: calc(25% - 15px);
-      outline: 2px solid red;
-      text-align: left;
-      .address-footer {
-        margin-bottom: 0px;
-      }
-    }
-    .social {
-      width: calc(25% - 15px);
-      margin-left: 30px;
-      outline: 2px solid red;
-    }
-    .subscribe {
-      flex-direction: column;
-      align-items: baseline;
-      width: 50%;
-      margin-top: 0px;
-      outline: 2px solid red;
-      [type="email"] {
-        width: 450px;
-      }
-    }
-  }
-}*/
   .footer {
     .container {
       display: flex;
-      flex-direction: row;
       flex-wrap: nowrap;
       align-items: baseline;
-      padding-top: 45px;
-      padding-bottom: 60px;
+    }
+    .logo-footer {
+      text-align: left;
     }
     .card {
-      width: 25%;
-      flex-direction: column;
+      width: 231px;
+      margin-right: 69px;
+      .address-footer li {
+        text-align: left;
+      }
     }
-  }
-  .logo-footer {
-    margin-bottom: 20px;
-    font-size: 26px;
-    line-height: 31px;
-  }
+    .social {
+      width: 206px;
+      margin: 0;
+      margin-right: 94px;
+      b {
+        display: inline-block;
+        text-align: left;
+      }
+      .social-list {
+        justify-content: start;
+      }
+    }
+    .subscribe {
+      display: block;
+      width: 570px;
+      margin: 0;
+      text-align: left;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
 
-  .address-footer {
-    margin: 0px;
-    /*margin-right: 69px;*/
-
-    ul,
-    li {
-      padding-left: 0px;
-      margin: 0px;
-    }
-    li {
-      margin-bottom: 9px;
-    }
-    li:last-child {
-      margin-bottom: 0px;
-    }
-  }
-
-  .social {
-    /*margin-right: 94px;*/
-    width: 25%;
-
-    b {
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .social-list {
-      display: flex;
-      justify-self: center;
-      align-items: center;
-      margin: 0px;
-      padding: 0px;
-    }
-    li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 10px;
-      width: 44px;
-      height: 44px;
-    }
-    li:last-child {
-      margin-right: 0px;
-    }
-  }
-
-  .subscribe {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-
-    label {
-      margin-bottom: 20px;
-    }
-
-    [type="email"] {
-      padding-left: 16px;
-      margin-right: 12px;
-      width: 358px;
-      height: 50px;
+      .subscribe-label {
+        width: 100%;
+        justify-content: start;
+      }
+      [type="email"] {
+        display: inline-block;
+        max-width: 358px;
+        text-align: start;
+        margin-right: 12px;
+        margin-bottom: 0;
+      }
     }
   }
 }
