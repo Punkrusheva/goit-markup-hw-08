@@ -1120,8 +1120,9 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 1200px) {
   .directions {
+    display: block;
     padding-bottom: 94px;
   }
   .directions .container {

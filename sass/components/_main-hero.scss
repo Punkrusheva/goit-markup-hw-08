@@ -37,19 +37,19 @@
     margin-right: auto;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: $mobil) {
   .hero .container {
-    width: 480px;
+    width: $mobil;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $table) {
   .hero .container {
-    width: 768px;
+    width: $table;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .hero .container {
-    width: 1200px;
+    width: $desktop;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;

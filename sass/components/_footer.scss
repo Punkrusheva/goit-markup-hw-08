@@ -235,7 +235,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $table) {
   .footer {
     .container {
       flex-direction: row;
@@ -263,7 +263,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .footer {
     .container {
       display: flex;

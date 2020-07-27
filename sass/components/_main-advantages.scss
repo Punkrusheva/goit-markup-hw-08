@@ -51,10 +51,10 @@
     color: $text-color;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: $mobil) {
   .advantages {
     .container {
-      width: 480px;
+      width: $mobil;
     }
     ul {
       margin: 0px;
@@ -66,10 +66,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $table) {
   .advantages {
     .container {
-      width: 768px;
+      width: $table;
       margin-bottom: -30px;
     }
     ul {
@@ -92,10 +92,10 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .advantages {
     .container {
-      width: 1200px;
+      width: $desktop;
     }
     .advantages {
       padding-top: 94px;

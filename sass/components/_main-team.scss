@@ -106,17 +106,17 @@
     fill: currentColor;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: $mobil) {
   .team .container {
-    width: 480px;
+    width: $mobil;
   }
   .team-list {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $table) {
   .team .container {
-    width: 768px;
+    width: $table;
   }
   .team ul {
     display: flex;
@@ -131,9 +131,9 @@
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .team .container {
-    width: 1200px;
+    width: $desktop;
   }
   .team {
     padding-top: 94px;

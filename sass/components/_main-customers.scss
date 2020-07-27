@@ -48,19 +48,19 @@
     fill: currentColor;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: $mobil) {
   .customers {
     .container {
-      width: 480px;
+      width: $mobil;
       margin-bottom: -30px;
     }
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $table) {
   .customers {
     .container {
-      width: 768px;
+      width: $table;
       margin-bottom: -30px;
     }
     ul {
@@ -84,12 +84,12 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .customers {
     padding-top: 94px;
     padding-bottom: 94px;
     .container {
-      width: 1200px;
+      width: $desktop;
       margin-bottom: 0;
     }
     ul {
