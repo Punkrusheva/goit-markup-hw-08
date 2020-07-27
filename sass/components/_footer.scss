@@ -154,9 +154,6 @@
   justify-content: center;
   text-align: center;
 
-  margin-left: 15px;
-  margin-right: 15px;
-
   .subscribe-label {
     display: flex;
     justify-content: center;
@@ -237,32 +234,91 @@
     fill: currentColor;
   }
 }
-@media screen and (min-width: 480px) {
-  .footer .container {
-    width: 480px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .footer {
     .container {
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
     }
-    .card,
+    .card {
+      width: calc(50% - 15px);
+      .address-footer {
+        margin-bottom: 0px;
+      }
+    }
     .social {
-      flex-wrap: nowrap;
+      width: calc(50% - 15px);
+      margin-left: 30px;
+    }
+    .subscribe {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 60px;
+      [type="email"] {
+        width: 450px;
+      }
     }
   }
 }
-/* ADDRESS FOOTER */
+@media screen and (min-width: 1200px) {
+  /*.footer {
+    .container {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-align: left;
+      outline: 2px solid red;
+    }
+    .card {
+      width: calc(25% - 15px);
+      outline: 2px solid red;
+      text-align: left;
+      .address-footer {
+        margin-bottom: 0px;
+      }
+    }
+    .social {
+      width: calc(25% - 15px);
+      margin-left: 30px;
+      outline: 2px solid red;
+    }
+    .subscribe {
+      flex-direction: column;
+      align-items: baseline;
+      width: 50%;
+      margin-top: 0px;
+      outline: 2px solid red;
+      [type="email"] {
+        width: 450px;
+      }
+    }
+  }
+}*/
+  .footer {
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: baseline;
+      padding-top: 45px;
+      padding-bottom: 60px;
+    }
+    .card {
+      width: 25%;
+      flex-direction: column;
+    }
+  }
+  .logo-footer {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 31px;
+  }
 
-/*.address-footer {
+  .address-footer {
     margin: 0px;
-    width: 231px;
-    margin-right: 69px;
-    
+    /*margin-right: 69px;*/
+
     ul,
     li {
       padding-left: 0px;
@@ -275,33 +331,16 @@
       margin-bottom: 0px;
     }
   }
-  /* SOCIAL */
-/*.social {
-    margin-right: 94px;
-    width: 206px;
+
+  .social {
+    /*margin-right: 94px;*/
+    width: 25%;
 
     b {
       display: inline-block;
       margin-bottom: 20px;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: bold;
-      font-size: $text-font-size;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $light-color;
     }
-    a {
-      color: $light-color;
-      line-height: 0.7;
 
-      transition: background-color $animation-effect;
-    }
-    a:hover,
-    a:focus {
-      background-color: $accent-color;
-    }
     .social-list {
       display: flex;
       justify-self: center;
@@ -316,128 +355,26 @@
       margin-right: 10px;
       width: 44px;
       height: 44px;
-      background-color: rgba(255, 255, 255, 0.1);
-      content: "";
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      border-radius: 50%;
-      background-size: auto;
-      transition: background-color $animation-effect;
     }
     li:last-child {
       margin-right: 0px;
     }
-    li:hover,
-    li:focus {
-      background-color: $accent-color;
-    }
-    .icon-soc {
-      width: 1em;
-      height: 1em;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
-    }
   }
-  /* SUBSCRIBE */
-/*.subscribe {
-    width: 570px;
+
+  .subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
     label {
       margin-bottom: 20px;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: bold;
-      font-size: $text-font-size;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $light-color;
     }
+
     [type="email"] {
       padding-left: 16px;
       margin-right: 12px;
       width: 358px;
       height: 50px;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 30px;
-      align-items: center;
-      letter-spacing: 0.03em;
-      color: $text-color;
-      background-color: $footer-bg-color;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      box-sizing: border-box;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-
-      &:focus,
-      &:hover {
-        outline: none;
-      }
-      &::-webkit-input-placeholder {
-        opacity: 1;
-        transition: opacity$animation-effect;
-      }
-      &::-moz-placeholder {
-        opacity: 1;
-        transition: opacity $animation-effect;
-      }
-      &:-moz-placeholder {
-        opacity: 1;
-        transition: opacity $animation-effect;
-      }
-      &:-ms-input-placeholder {
-        opacity: 1;
-        transition: opacity $animation-effect;
-      }
-      &:focus::-webkit-input-placeholder {
-        opacity: 0;
-        transition: opacity $animation-effect;
-      }
-      &:focus::-moz-placeholder {
-        opacity: 0;
-        transition: opacity $animation-effect;
-      }
-      &:focus:-moz-placeholder {
-        opacity: 0;
-        transition: opacity $animation-effect;
-      }
-      &:focus:-ms-input-placeholder {
-        opacity: 0;
-        transition: opacity $animation-effect;
-      }
-    }
-    .icon-send {
-      display: inline-block;
-      width: 1.5em;
-      height: 1.5em;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
     }
   }
 }
-}
-@media screen and (min-width: 1200px) {
-  
-
-  /*.logo-footer {
-    margin-bottom: 20px;
-     font-family: $logo-font-family;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 26px;
-
-    .logo-blue {
-      color: $accent-color;
-    }
-    .logo-white {
-      color: $light-color;
-    }
-  }
-}
-*/
