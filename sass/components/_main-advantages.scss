@@ -86,7 +86,7 @@
     }
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $before-desktop) {
     .advantages .list-item:nth-child(even) {
       margin-right: 0;
     }

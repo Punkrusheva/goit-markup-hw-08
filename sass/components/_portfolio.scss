@@ -181,7 +181,7 @@ h1 {
       }
     }
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $before-desktop) {
     .portfolio-info li:nth-child(odd) {
       margin-right: 30px;
     }

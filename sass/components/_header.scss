@@ -4,12 +4,12 @@
   justify-content: space-between;
   position: relative;
   border-bottom: 1px solid #ececec;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $before-table) {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
-/* LOGO */
+
 .page-header {
   .logo {
     font-family: $logo-font-family;
@@ -26,13 +26,13 @@
     color: #000000;
   }
 }
+
 .header-menu {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .menu-button {
   display: inline-flex;
   width: 40px;
@@ -65,7 +65,7 @@
     transform: translatY(-100%);
     transition: transform $animation-effect;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $before-table) {
     display: none;
     position: absolute;
     top: 100%;
@@ -87,11 +87,11 @@
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.02em;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $before-table) {
     margin-bottom: 60px;
   }
   li {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $before-table) {
       margin-bottom: 40px;
     }
   }
@@ -128,7 +128,6 @@
   li {
     margin-bottom: 16px;
   }
-
   .e-mail,
   .phone {
     display: flex;
@@ -140,7 +139,6 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-
     letter-spacing: 0.02em;
     color: $text-color;
 
@@ -192,7 +190,7 @@
       flex-direction: column;
       justify-content: center;
       li {
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: $before-desktop) {
           margin-bottom: 10px;
           &:last-child {
             margin-bottom: 0;
@@ -201,7 +199,7 @@
       }
       .e-mail,
       .phone {
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: $before-desktop) {
           font-size: 12px;
           line-height: 14px;
           margin-bottom: 0;

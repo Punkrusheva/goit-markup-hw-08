@@ -126,7 +126,7 @@
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: $before-desktop) {
   .team-list:nth-child(odd) {
     margin-right: 30px;
   }

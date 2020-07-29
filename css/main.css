@@ -416,7 +416,6 @@ a {
   }
 }
 
-/* LOGO */
 .page-header .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -716,8 +715,25 @@ a {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-img.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-img.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/hero-img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/hero-img.jpg");
+  /*background-image:     -webkit-gradient(
+      linear, left top, left bottom, 
+      from(rgba(47,48,58,0.8)), 
+      to(rgba(47,48,58,0.8))),
+      url(../img/Header-img-condensed@1x.jpg);
+    background-image: -webkit-linear-gradient(
+      rgba(47,48,58,0.8), 
+      rgba(47,48,58,0.8)),
+      url(../img/Header-img-condensed@1x.jpg);
+    background-image: -o-linear-gradient(
+      rgba(47,48,58,0.8), 
+      rgba(47,48,58,0.8)),
+      url(../img/Header-img-condensed@1x.jpg);
+    background-image: linear-gradient(
+      rgba(47,48,58,0.8), 
+      rgba(47,48,58,0.8)),
+      url(../img/Header-img-condensed@1x.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1453,29 +1469,37 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
+  margin-bottom: -30px;
 }
 
 .customers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
 }
 
 .customers .list-item {
-  width: 100%;
+  width: calc((100% - 30px) / 2);
   height: 90px;
-  margin-right: 0px;
   margin-bottom: 30px;
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-right: 30px;
 }
 
-.customers .list-item:last-child {
-  margin-bottom: 0px;
+@media screen and (max-width: 767px) {
+  .customers .list-item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .customers .link {
@@ -1540,7 +1564,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .customers .list-item:nth-child(3n) {
     margin-right: 0px;
   }
