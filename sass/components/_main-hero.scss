@@ -4,24 +4,8 @@
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url("../images/desk-hero-img-1600-600.jpg");
-  /*background-image:     -webkit-gradient(
-      linear, left top, left bottom, 
-      from(rgba(47,48,58,0.8)), 
-      to(rgba(47,48,58,0.8))),
-      url(../img/Header-img-condensed@1x.jpg);
-    background-image: -webkit-linear-gradient(
-      rgba(47,48,58,0.8), 
-      rgba(47,48,58,0.8)),
-      url(../img/Header-img-condensed@1x.jpg);
-    background-image: -o-linear-gradient(
-      rgba(47,48,58,0.8), 
-      rgba(47,48,58,0.8)),
-      url(../img/Header-img-condensed@1x.jpg);
-    background-image: linear-gradient(
-      rgba(47,48,58,0.8), 
-      rgba(47,48,58,0.8)),
-      url(../img/Header-img-condensed@1x.jpg);*/
+    url("../images/mob-hero-img-480-400.jpg");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,6 +37,17 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 1dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/mob-hero-img-480-400@2x.jpg");
+  }
 }
 @media screen and (min-width: $mobil) {
   .hero .container {
@@ -60,20 +55,56 @@
   }
 }
 @media screen and (min-width: $table) {
-  .hero .container {
-    width: $table;
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/tabl-hero-img-768-400.jpg");
+    .container {
+      width: $table;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/tabl-hero-img-768-400@2x.jpg");
+    }
   }
 }
 @media screen and (min-width: $desktop) {
-  .hero .container {
-    width: $desktop;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    .title {
-      max-width: 696px;
-      font-size: 44px;
-      line-height: 60px;
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/desk-hero-img-1600-600.jpg");
+    .container {
+      width: $desktop;
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+      .title {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 60px;
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/desk-hero-img-1600-600@2x.jpg");
     }
   }
 }
