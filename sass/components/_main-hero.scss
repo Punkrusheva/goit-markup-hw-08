@@ -49,11 +49,7 @@
       url("../images/mob-hero-img-480-400@2x.jpg");
   }
 }
-@media screen and (min-width: $mobil) {
-  .hero .container {
-    width: $mobil;
-  }
-}
+
 @media screen and (min-width: $table) {
   .hero {
     background-image: linear-gradient(
@@ -62,9 +58,6 @@
         rgba(47, 48, 58, 0.8)
       ),
       url("../images/tabl-hero-img-768-400.jpg");
-    .container {
-      width: $table;
-    }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 1dppx) {
@@ -86,7 +79,6 @@
       ),
       url("../images/desk-hero-img-1600-600.jpg");
     .container {
-      width: $desktop;
       height: 600px;
       padding-top: 200px;
       padding-bottom: 200px;

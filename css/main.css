@@ -760,19 +760,10 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .hero .container {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/tabl-hero-img-768-400.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/tabl-hero-img-768-400.jpg");
-  }
-  .hero .container {
-    width: 768px;
   }
 }
 
@@ -789,7 +780,6 @@ a {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/desk-hero-img-1600-600.jpg");
   }
   .hero .container {
-    width: 1200px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -2098,7 +2088,6 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   padding-left: 16px;
-  margin-bottom: 20px;
   width: 100%;
   height: 50px;
   font-family: "Roboto", sans-serif;
@@ -2118,6 +2107,12 @@ h1 {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe [type="email"] {
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe [type="email"]:focus, .subscribe [type="email"]:hover {
@@ -2218,9 +2213,6 @@ h1 {
 
 @media screen and (min-width: 1200px) {
   .footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-align: baseline;
@@ -2277,7 +2269,6 @@ h1 {
     max-width: 358px;
     text-align: start;
     margin-right: 12px;
-    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
