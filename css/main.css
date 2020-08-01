@@ -825,7 +825,7 @@ a {
 .modal {
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 60%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1223,9 +1223,6 @@ a {
 }
 
 @media screen and (min-width: 480px) {
-  .advantages .container {
-    width: 480px;
-  }
   .advantages ul {
     margin: 0px;
     padding-left: 0px;
@@ -1237,7 +1234,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .advantages .container {
-    width: 768px;
     margin-bottom: -30px;
   }
   .advantages ul {
@@ -1264,9 +1260,6 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .advantages .container {
-    width: 1200px;
-  }
   .advantages .advantages {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1291,7 +1284,6 @@ a {
 }
 
 .team {
-  width: 100%;
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1419,18 +1411,12 @@ a {
 }
 
 @media screen and (min-width: 480px) {
-  .team .container {
-    width: 480px;
-  }
   .team-list {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .team .container {
-    width: 768px;
-  }
   .team ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1450,9 +1436,6 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .team .container {
-    width: 1200px;
-  }
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1470,7 +1453,6 @@ a {
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 100%;
   margin-bottom: -30px;
 }
 
@@ -1538,14 +1520,12 @@ a {
 
 @media screen and (min-width: 480px) {
   .customers .container {
-    width: 480px;
     margin-bottom: -30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .customers .container {
-    width: 768px;
     margin-bottom: -30px;
   }
   .customers ul {
@@ -1578,7 +1558,6 @@ a {
     padding-bottom: 94px;
   }
   .customers .container {
-    width: 1200px;
     margin-bottom: 0;
   }
   .customers ul {
@@ -1797,19 +1776,10 @@ h1 {
   color: #757575;
 }
 
-@media screen and (min-width: 480px) {
-  .portfolio .container {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .portfolio {
     padding-top: 66px;
     padding-bottom: 60px;
-  }
-  .portfolio .container {
-    width: 768px;
   }
   .portfolio-sorting {
     margin-bottom: 30px;
@@ -1837,9 +1807,6 @@ h1 {
   .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  .portfolio .container {
-    width: 1200px;
   }
   .portfolio-sorting {
     margin-bottom: 50px;

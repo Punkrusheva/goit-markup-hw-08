@@ -154,18 +154,11 @@ h1 {
   letter-spacing: 0.03em;
   color: $text-color;
 }
-@media screen and (min-width: $mobil) {
-  .portfolio .container {
-    width: $mobil;
-  }
-}
 @media screen and (min-width: $table) {
   .portfolio {
     padding-top: 66px;
     padding-bottom: 60px;
-    .container {
-      width: $table;
-    }
+
     &-sorting {
       margin-bottom: 30px;
       ul {
@@ -191,9 +184,7 @@ h1 {
     .portfolio {
       padding-top: 94px;
       padding-bottom: 94px;
-      .container {
-        width: $desktop;
-      }
+
       &-sorting {
         margin-bottom: 50px;
       }
